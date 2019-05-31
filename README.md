@@ -1,4 +1,4 @@
-![image](https://cdn.discordapp.com/attachments/562746538565304390/563014448726540331/20190403_163028.png)
+
 
 ### Installing
 
