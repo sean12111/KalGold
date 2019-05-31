@@ -48,7 +48,7 @@ const uint64_t EMISSION_SPEED_FACTOR_V2_HEIGHT               = 270000; // Date o
 
 
 /* Premine amount */
-const uint64_t GENESIS_BLOCK_REWARD                          = UINT64_C(0);
+const uint64_t GENESIS_BLOCK_REWARD                          = UINT64_C(200);
 
 /* How to generate a premine:
 * Compile your code
@@ -62,7 +62,7 @@ TurtleGoldd --print-genesis-tx --genesis-block-reward-address
 * Recompile, setup your seed nodes, and start mining
 * You should see your premine appear in the previously generated wallet.
 */
-const char     GENESIS_COINBASE_TX_HEX[]                     = "017801ff00010002a40e83f44198285b3036a7ccef7ff155375b34c7cc8552ceea8721aefa8229752101aaad54aade16d9a4542e0efb3fdf32d86daadc16f1c07f1e363dd0e152a81def";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "017801ff00010002ac88b2324d9d2608b5656bc43874e34bd1c60dcfe6f42c694921cde1bc1d2b5d21018d5e3c774f586e2851890269c16f73944a239c238011d10a1662b94b54ed3fe8";
 static_assert(sizeof(GENESIS_COINBASE_TX_HEX)/sizeof(*GENESIS_COINBASE_TX_HEX) != 1, "GENESIS_COINBASE_TX_HEX must not be empty.");
 
 /* This is the unix timestamp of the first "mined" block (technically block 2, not the genesis block)
@@ -104,7 +104,7 @@ const uint64_t MAX_EXTRA_SIZE_V2_HEIGHT                      = 700000;
 
 /* For new projects forked from this code base, this value should be
    changed to 0 to prevent a possible transaction bloat exploit */
-const uint64_t TRANSACTION_SIGNATURE_COUNT_VALIDATION_HEIGHT = 700000;
+const uint64_t TRANSACTION_SIGNATURE_COUNT_VALIDATION_HEIGHT = 0;
 
 const uint64_t CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_BLOCKS     = 1;
 const uint64_t CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_SECONDS    = DIFFICULTY_TARGET * CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_BLOCKS;
@@ -158,7 +158,7 @@ const char     P2P_NET_DATA_FILENAME[]                       = "p2pstate.bin";
 const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json";
 } // parameters
 
-const char     CRYPTONOTE_NAME[]                             = "TurtleGold";
+const char     CRYPTONOTE_NAME[]                             = "KalGold";
 
 const uint8_t  TRANSACTION_VERSION_1                         =  1;
 const uint8_t  TRANSACTION_VERSION_2                         =  2;
@@ -217,11 +217,11 @@ const char     LATEST_VERSION_URL[]                          = "https://github.c
 const std::string LICENSE_URL                                = "https://github.com/turtlegold/TurtleGold/blob/master/LICENSE";
 const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 {
-    {  0xb5, 0x0c, 0x4a, 0x6c, 0xcf, 0x52, 0x57, 0x41, 0x65, 0xf9, 0x91, 0xa4, 0xb6, 0xc1, 0x43, 0xe9  }
+    {  0xb5, 0x0c, 0x4a, 0x6c, 0xcf, 0x52, 0x57, 0x41, 0x65, 0xf9, 0x91, 0xa0, 0xb0, 0xc1, 0x43, 0xe9  }
 };
 
 const char* const SEED_NODES[] = {
-    "5.172.219.174:42068", //sniperviperman
-    "18.221.128.115:42068" //ifernandez
+    //"5.172.219.174:42068", //sniperviperman
+    "157.230.167.165:42068" //ifernandez
 };
 } // CryptoNote
