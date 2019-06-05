@@ -7,6 +7,7 @@
 #pragma once
 
 const std::string asciiArt =
+"                                                                       \n"
 "          _____                    _____                               \n"
 "         /\    \                  /\    \                              \n"
 "        /::\____\                /::\    \                             \n"
